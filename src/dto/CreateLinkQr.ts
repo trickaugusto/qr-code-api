@@ -1,3 +1,3 @@
 export class CreateLinkQr {
-    link: string
+  link: string;
 }

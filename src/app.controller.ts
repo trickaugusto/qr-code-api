@@ -1,5 +1,4 @@
-
-import { Body, Controller, Get, HttpStatus, Param, Post, Redirect, Res } from '@nestjs/common';
+import { Body, Controller, Get, Post, Redirect } from '@nestjs/common';
 import { AppService } from './app.service';
 import { CreateLinkQr } from './dto/CreateLinkQr';
 
@@ -20,6 +19,6 @@ export class AppController {
 
   @Post('new-link')
   async newLink(@Body() createLinkQr: CreateLinkQr) {
-    return `this action post a new link: ${createLinkQr.link}`
+    return `this action post a new link: ${createLinkQr.link}`;
   }
 }
